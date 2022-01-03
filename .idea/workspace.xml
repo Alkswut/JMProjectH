@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45d05761-ff0a-4484-81df-53d61c8371d1" name="Changes" comment="Task_1_1_4(UPD_Intermediate)">
-      <change afterPath="$PROJECT_DIR$/.idea/META-INF/orm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/META-INF/orm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JMProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JMProjects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7f0fbec6-f6c1-4d9c-b38e-092d04d61af0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7f0fbec6-f6c1-4d9c-b38e-092d04d61af0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JMProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JMProjects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataSources/7f0fbec6-f6c1-4d9c-b38e-092d04d61af0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dataSources/7f0fbec6-f6c1-4d9c-b38e-092d04d61af0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/HibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/HibernateUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +83,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\AleksandrVoroninSME\IdeaProjects\JMProjectH\.idea\libraries" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\AleksandrVoroninSME\IdeaProjects\JMProjectH\src\test\java" />
       <recent name="C:\Users\AleksandrVoroninSME\IdeaProjects\JMProjectH\src\main\java\jm\task\core\jdbc" />
@@ -197,7 +181,7 @@
       <workItem from="1641152320704" duration="1252000" />
       <workItem from="1641153612080" duration="16685000" />
       <workItem from="1641234193732" duration="2941000" />
-      <workItem from="1641237177478" duration="365000" />
+      <workItem from="1641237177478" duration="485000" />
     </task>
     <task id="LOCAL-00001" summary="Task_1_1_3">
       <created>1641068386599</created>
@@ -283,7 +267,28 @@
       <option name="project" value="LOCAL" />
       <updated>1641234465262</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Task_1_1_4(UPD_Intermediate)">
+      <created>1641237565610</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1641237565610</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Task_1_1_4(UPD_Intermediate)">
+      <created>1641237571884</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1641237571884</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Task_1_1_4(UPD_Intermediate)">
+      <created>1641237621639</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1641237621639</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
