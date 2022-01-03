@@ -31,8 +31,7 @@ public class Main {
 //        }
 //        userService.cleanUsersTable();
 //        userService.dropUsersTable();
-        Session session = getSessionFactory().openSession();
-        Transaction transaction = session.beginTransaction();
-        System.out.println(transaction);
+        UserDaoHibernateImpl userDaoHibernate = new UserDaoHibernateImpl();
+        userDaoHibernate.dropUsersTable();
     }
 }

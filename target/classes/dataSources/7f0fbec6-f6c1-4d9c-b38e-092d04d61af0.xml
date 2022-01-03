@@ -1008,52 +1008,28 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <table id="284" parent="275" name="jmusers">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="285" parent="275" name="users"/>
-    <column id="286" parent="284" name="ID">
+    <column id="285" parent="284" name="ID">
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="287" parent="284" name="Name">
+    <column id="286" parent="284" name="Name">
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="288" parent="284" name="LastName">
+    <column id="287" parent="284" name="LastName">
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="289" parent="284" name="Age">
+    <column id="288" parent="284" name="Age">
       <DataType>tinyint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <key id="290" parent="284" name="PRIMARY">
-      <ColNames>ID</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
-    <column id="291" parent="285" name="ID">
-      <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
-    </column>
-    <column id="292" parent="285" name="name">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>2</Position>
-    </column>
-    <column id="293" parent="285" name="lastName">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>3</Position>
-    </column>
-    <column id="294" parent="285" name="age">
-      <DataType>tinyint|0s</DataType>
-      <Position>4</Position>
-    </column>
-    <key id="295" parent="285" name="PRIMARY">
+    <key id="289" parent="284" name="PRIMARY">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>

@@ -4,30 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d05761-ff0a-4484-81df-53d61c8371d1" name="Changes" comment="Task_1_1_4">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_11_5_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/JmusersEntity.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/JmusersEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/UsersEntity.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/UsersEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JMProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JMProjects.iml" afterDir="false" />
+    <list default="true" id="45d05761-ff0a-4484-81df-53d61c8371d1" name="Changes" comment="Task_1_1_4(UPD_Intermediate)">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/7f0fbec6-f6c1-4d9c-b38e-092d04d61af0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7f0fbec6-f6c1-4d9c-b38e-092d04d61af0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoJDBCImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoJDBCImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/model/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/HibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/HibernateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +89,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JMProject/.idea/libraries" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.33103448" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -110,7 +100,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.dropUsersTable">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="JMProjects" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jm.task.core.jdbc.Main" />
       <module name="JMProjects" />
@@ -129,16 +126,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UserServiceTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.cleanUsersTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JMProjects" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserServiceTest" />
-      <option name="METHOD_NAME" value="cleanUsersTable" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="JUnit.UserServiceTest.dropUsersTable" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UserServiceTest.createUsersTable" />
         <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="JUnit.UserServiceTest.cleanUsersTable" />
       </list>
     </recent_temporary>
   </component>
@@ -198,6 +185,7 @@
       <workItem from="1641151926569" duration="14000" />
       <workItem from="1641152320704" duration="1252000" />
       <workItem from="1641153612080" duration="16685000" />
+      <workItem from="1641234193732" duration="1815000" />
     </task>
     <task id="LOCAL-00001" summary="Task_1_1_3">
       <created>1641068386599</created>
@@ -269,7 +257,21 @@
       <option name="project" value="LOCAL" />
       <updated>1641153768385</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Task_1_1_4(UPD_Intermediate)">
+      <created>1641234435101</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1641234435101</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Task_1_1_4(UPD_Intermediate)">
+      <created>1641234465262</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1641234465262</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,11 +327,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
-      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/JMProjectH" />
     </ignored-roots>
     <MESSAGE value="Task_1_1_3" />
     <MESSAGE value="Task_1_1_4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task_1_1_4" />
+    <MESSAGE value="Task_1_1_4(UPD_Intermediate)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task_1_1_4(UPD_Intermediate)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/JMProjects$Main.ic" NAME="Main Coverage Results" MODIFIED="1640807750226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
+    UserDaoJDBCImpl userDaoJDBC = new UserDaoJDBCImpl();
     UserDaoHibernateImpl userDaoHibernate = new UserDaoHibernateImpl();
     public UserServiceImpl() {
 
@@ -25,6 +26,7 @@ public class UserServiceImpl implements UserService {
 
     public void dropUsersTable() throws SQLException {
         userDaoHibernate.dropUsersTable();
+        //userDaoJDBC.dropUsersTable();
     }
 
     public void saveUser(String name, String lastName, byte age) throws SQLException {
