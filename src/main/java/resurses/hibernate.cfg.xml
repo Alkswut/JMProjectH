@@ -8,10 +8,12 @@
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="hibernate.connection.name">root</property>
         <property name="hibernate.connection.password">!789qwe!</property>
-                <mapping resource="jm/task/core/jdbc/JmusersEntity.hbm.xml"/>
-                <mapping class="jm.task.core.jdbc.JmusersEntity"/>
-        <mapping resource="jm/task/core/jdbc/UsersEntity.hbm.xml"/>
-        <mapping class="jm.task.core.jdbc.UsersEntity"/>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hbm2ddl.auto">update</property>
+<!--        <mapping resource="jm/task/core/jdbc/JmusersEntity.hbm.xml"/>-->
+<!--        <mapping class="jm.task.core.jdbc.JmusersEntity"/>-->
+<!--        <mapping resource="jm/task/core/jdbc/UsersEntity.hbm.xml"/>-->
+<!--        <mapping class="jm.task.core.jdbc.UsersEntity"/>-->
 
         <!--         DB schema will be updated if needed -->
         <!--         <property name="hibernate.hbm2ddl.auto">update</property> -->

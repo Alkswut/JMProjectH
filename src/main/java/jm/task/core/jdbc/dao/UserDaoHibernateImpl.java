@@ -1,13 +1,12 @@
 package jm.task.core.jdbc.dao;
 
-import jm.task.core.jdbc.JmusersEntity;
-import jm.task.core.jdbc.UsersEntity;
 import org.hibernate.*;
 
 import jm.task.core.jdbc.model.User;
-import jm.task.core.jdbc.util.HibernateUtil;
 
-
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import java.util.List;
 
 import static jm.task.core.jdbc.util.HibernateUtil.getSessionFactory;
@@ -21,68 +20,123 @@ public class UserDaoHibernateImpl implements UserDao {
 
     @Override
     public void createUsersTable() {
-        Session session = getSessionFactory().openSession();
-        transaction = session.beginTransaction();
+        Session session = null;
+        try {
+            session = getSessionFactory().openSession();
+            transaction = session.beginTransaction();
+            String sql = "CREATE TABLE IF NOT EXISTS USERS" +
+                    "(ID BIGINT not null AUTO_INCREMENT, " +
+                    "name VARCHAR(255), " +
+                    "lastName VARCHAR(255), " +
+                    "age TINYINT, " +
+                    "PRIMARY KEY(ID))";
 
-        String sql = "CREATE TABLE IF NOT EXISTS USERS" +
-                "(ID BIGINT not null AUTO_INCREMENT, " +
-                "name VARCHAR(255), " +
-                "lastName VARCHAR(255), " +
-                "age TINYINT, " +
-                "PRIMARY KEY(ID))";
-
-        Query query = session.createSQLQuery(sql).addEntity(User.class);
-        query.executeUpdate();
-
-        transaction.commit();
-        session.close();
+            Query query = session.createSQLQuery(sql).addEntity(User.class);
+            query.executeUpdate();
+            transaction.commit();
+        } catch (HibernateException e) {
+            e.printStackTrace();
+        } finally {
+            if (session != null && session.isOpen()) {
+                session.close();
+            }
+        }
     }
 
     @Override
     public void dropUsersTable() {
-        Session session = getSessionFactory().openSession();
-        transaction = session.beginTransaction();
-
-        String sql = "DROP TABLE IF EXISTS USERS";
-
-        Query query = session.createSQLQuery(sql).addEntity(User.class);
-        query.executeUpdate();
-        transaction.commit();
-        session.close();
+        Session session = null;
+        try {
+            session = getSessionFactory().openSession();
+            transaction = session.beginTransaction();
+            String sql = "DROP TABLE IF EXISTS USERS";
+            Query query = session.createSQLQuery(sql).addEntity(User.class);
+            query.executeUpdate();
+            transaction.commit();
+        } catch (HibernateException e) {
+            e.printStackTrace();
+        } finally {
+            if (session != null && session.isOpen()) {
+                session.close();
+            }
+        }
     }
 
     @Override
     public void saveUser(String name, String lastName, byte age) {
+        Session session = null;
         try {
-            Session session = getSessionFactory().openSession();
+            session = getSessionFactory().openSession();
             transaction = session.beginTransaction();
             User user = new User(name, lastName, age);
             session.save(user);
             transaction.commit();
         } catch (HibernateException e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
+        } finally {
+            if (session != null && session.isOpen()) {
+                session.close();
+            }
         }
     }
 
     @Override
     public void removeUserById(long id) {
-
+        Session session = null;
+        try {
+            session = getSessionFactory().openSession();
+            transaction = session.beginTransaction();
+            User user = new User();
+            user.setId(id);
+            session.delete(user);
+            transaction.commit();
+        } catch (HibernateException e) {
+            e.printStackTrace();
+        } finally {
+            if (session != null && session.isOpen()) {
+                session.close();
+            }
+        }
     }
 
     @Override
     public List<User> getAllUsers() {
-        Query query = null;
+        Session session = null;
+        List<User> list = null;
         try {
-            Session session = getSessionFactory().openSession();
-            query = session.createQuery("SELECT * FROM JMUsers");
+            session = getSessionFactory().openSession();
+            transaction = session.beginTransaction();
+            CriteriaBuilder builder = session.getCriteriaBuilder();
+            CriteriaQuery<User> criteria = builder.createQuery(User.class);
+            Root<User>root = criteria.from(User.class);
+            criteria.select(root);
+            list = session.createQuery(criteria).getResultList();
+            //list = session.createCriteria(Users.class).list();
+            transaction.commit();
         } catch (HibernateException e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
+        } finally {
+            if (session != null && session.isOpen()) {
+                session.close();
+            }
         }
-        return query.list();
+        return list;
     }
 
     @Override
     public void cleanUsersTable() {
-
+        Session session = null;
+        try {
+            session = getSessionFactory().openSession();
+            session.beginTransaction();
+            session.createQuery("DELETE FROM User").executeUpdate();
+            session.getTransaction().commit();
+        } catch (HibernateException e) {
+            e.printStackTrace();
+        } finally {
+            if (session != null && session.isOpen()) {
+                session.close();
+            }
+        }
     }
 }

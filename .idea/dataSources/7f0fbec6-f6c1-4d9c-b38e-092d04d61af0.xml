@@ -5,9 +5,9 @@
       <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
-      <Grants>|root||alex||ALTER|G
+      <Grants>|root||alex|localhost|ALTER|G
 |root||root|localhost|ALTER|G
-|root||alex||ALTER ROUTINE|G
+|root||alex|localhost|ALTER ROUTINE|G
 |root||root|localhost|ALTER ROUTINE|G
 |root||root|localhost|APPLICATION_PASSWORD_ADMIN|G
 |root||root|localhost|AUDIT_ADMIN|G
@@ -20,30 +20,30 @@
 |root||root|localhost|CLONE_ADMIN|G
 |root||mysql.session|localhost|CONNECTION_ADMIN|G
 |root||root|localhost|CONNECTION_ADMIN|G
-|root||alex||CREATE|G
+|root||alex|localhost|CREATE|G
 |root||root|localhost|CREATE|G
 |root||root|localhost|CREATE ROLE|G
-|root||alex||CREATE ROUTINE|G
+|root||alex|localhost|CREATE ROUTINE|G
 |root||root|localhost|CREATE ROUTINE|G
-|root||alex||CREATE TABLESPACE|G
+|root||alex|localhost|CREATE TABLESPACE|G
 |root||root|localhost|CREATE TABLESPACE|G
-|root||alex||CREATE TEMPORARY TABLES|G
+|root||alex|localhost|CREATE TEMPORARY TABLES|G
 |root||root|localhost|CREATE TEMPORARY TABLES|G
-|root||alex||CREATE USER|G
+|root||alex|localhost|CREATE USER|G
 |root||root|localhost|CREATE USER|G
-|root||alex||CREATE VIEW|G
+|root||alex|localhost|CREATE VIEW|G
 |root||root|localhost|CREATE VIEW|G
-|root||alex||DELETE|G
+|root||alex|localhost|DELETE|G
 |root||root|localhost|DELETE|G
-|root||alex||DROP|G
+|root||alex|localhost|DROP|G
 |root||root|localhost|DROP|G
 |root||root|localhost|DROP ROLE|G
 |root||root|localhost|ENCRYPTION_KEY_ADMIN|G
-|root||alex||EVENT|G
+|root||alex|localhost|EVENT|G
 |root||root|localhost|EVENT|G
-|root||alex||EXECUTE|G
+|root||alex|localhost|EXECUTE|G
 |root||root|localhost|EXECUTE|G
-|root||alex||FILE|G
+|root||alex|localhost|FILE|G
 |root||root|localhost|FILE|G
 |root||root|localhost|FLUSH_OPTIMIZER_COSTS|G
 |root||root|localhost|FLUSH_STATUS|G
@@ -51,48 +51,48 @@
 |root||root|localhost|FLUSH_USER_RESOURCES|G
 |root||root|localhost|GROUP_REPLICATION_ADMIN|G
 |root||root|localhost|GROUP_REPLICATION_STREAM|G
-|root||alex||INDEX|G
+|root||alex|localhost|INDEX|G
 |root||root|localhost|INDEX|G
 |root||root|localhost|INNODB_REDO_LOG_ARCHIVE|G
 |root||root|localhost|INNODB_REDO_LOG_ENABLE|G
-|root||alex||INSERT|G
+|root||alex|localhost|INSERT|G
 |root||root|localhost|INSERT|G
-|root||alex||LOCK TABLES|G
+|root||alex|localhost|LOCK TABLES|G
 |root||root|localhost|LOCK TABLES|G
 |root||root|localhost|PASSWORDLESS_USER_ADMIN|G
 |root||mysql.session|localhost|PERSIST_RO_VARIABLES_ADMIN|G
 |root||root|localhost|PERSIST_RO_VARIABLES_ADMIN|G
-|root||alex||PROCESS|G
+|root||alex|localhost|PROCESS|G
 |root||root|localhost|PROCESS|G
-|root||alex||REFERENCES|G
+|root||alex|localhost|REFERENCES|G
 |root||root|localhost|REFERENCES|G
-|root||alex||RELOAD|G
+|root||alex|localhost|RELOAD|G
 |root||root|localhost|RELOAD|G
-|root||alex||REPLICATION CLIENT|G
+|root||alex|localhost|REPLICATION CLIENT|G
 |root||root|localhost|REPLICATION CLIENT|G
-|root||alex||REPLICATION SLAVE|G
+|root||alex|localhost|REPLICATION SLAVE|G
 |root||root|localhost|REPLICATION SLAVE|G
 |root||root|localhost|REPLICATION_APPLIER|G
 |root||root|localhost|REPLICATION_SLAVE_ADMIN|G
 |root||root|localhost|RESOURCE_GROUP_ADMIN|G
 |root||root|localhost|RESOURCE_GROUP_USER|G
 |root||root|localhost|ROLE_ADMIN|G
-|root||alex||SELECT|G
+|root||alex|localhost|SELECT|G
 |root||mysql.infoschema|localhost|SELECT|G
 |root||root|localhost|SELECT|G
 |root||root|localhost|SERVICE_CONNECTION_ADMIN|G
 |root||mysql.session|localhost|SESSION_VARIABLES_ADMIN|G
 |root||root|localhost|SESSION_VARIABLES_ADMIN|G
 |root||root|localhost|SET_USER_ID|G
-|root||alex||SHOW DATABASES|G
+|root||alex|localhost|SHOW DATABASES|G
 |root||root|localhost|SHOW DATABASES|G
-|root||alex||SHOW VIEW|G
+|root||alex|localhost|SHOW VIEW|G
 |root||root|localhost|SHOW VIEW|G
 |root||root|localhost|SHOW_ROUTINE|G
-|root||alex||SHUTDOWN|G
+|root||alex|localhost|SHUTDOWN|G
 |root||mysql.session|localhost|SHUTDOWN|G
 |root||root|localhost|SHUTDOWN|G
-|root||alex||SUPER|G
+|root||alex|localhost|SUPER|G
 |root||mysql.session|localhost|SUPER|G
 |root||root|localhost|SUPER|G
 |root||mysql.infoschema|localhost|SYSTEM_USER|G
@@ -102,12 +102,12 @@
 |root||mysql.session|localhost|SYSTEM_VARIABLES_ADMIN|G
 |root||root|localhost|SYSTEM_VARIABLES_ADMIN|G
 |root||root|localhost|TABLE_ENCRYPTION_ADMIN|G
-|root||alex||TRIGGER|G
+|root||alex|localhost|TRIGGER|G
 |root||root|localhost|TRIGGER|G
-|root||alex||UPDATE|G
+|root||alex|localhost|UPDATE|G
 |root||root|localhost|UPDATE|G
 |root||root|localhost|XA_RECOVER_ADMIN|G
-|root||alex||grant option|G
+|root||alex|localhost|grant option|G
 |root||root|localhost|grant option|G
 performance_schema|schema||mysql.session|localhost|SELECT|G
 sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
@@ -987,6 +987,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Collation>utf8mb4_0900_ai_ci</Collation>
     </schema>
     <user id="279" parent="1" name="alex">
+      <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
     <user id="280" parent="1" name="mysql.infoschema">
