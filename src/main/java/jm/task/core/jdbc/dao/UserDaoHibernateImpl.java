@@ -35,6 +35,7 @@ public class UserDaoHibernateImpl implements UserDao {
             query.executeUpdate();
             transaction.commit();
         } catch (HibernateException e) {
+            transaction.rollback();
             e.printStackTrace();
         } finally {
             if (session != null && session.isOpen()) {
@@ -54,6 +55,7 @@ public class UserDaoHibernateImpl implements UserDao {
             query.executeUpdate();
             transaction.commit();
         } catch (HibernateException e) {
+            transaction.rollback();
             e.printStackTrace();
         } finally {
             if (session != null && session.isOpen()) {
@@ -72,6 +74,7 @@ public class UserDaoHibernateImpl implements UserDao {
             session.save(user);
             transaction.commit();
         } catch (HibernateException e) {
+            transaction.rollback();
             e.printStackTrace();
         } finally {
             if (session != null && session.isOpen()) {
@@ -91,6 +94,7 @@ public class UserDaoHibernateImpl implements UserDao {
             session.delete(user);
             transaction.commit();
         } catch (HibernateException e) {
+            transaction.rollback();
             e.printStackTrace();
         } finally {
             if (session != null && session.isOpen()) {
@@ -106,14 +110,18 @@ public class UserDaoHibernateImpl implements UserDao {
         try {
             session = getSessionFactory().openSession();
             transaction = session.beginTransaction();
-            CriteriaBuilder builder = session.getCriteriaBuilder();
-            CriteriaQuery<User> criteria = builder.createQuery(User.class);
-            Root<User>root = criteria.from(User.class);
-            criteria.select(root);
-            list = session.createQuery(criteria).getResultList();
-            //list = session.createCriteria(Users.class).list();
+            list = session.createQuery("From " + User.class.getSimpleName()).list();
+//Second variant
+//            CriteriaBuilder builder = session.getCriteriaBuilder();
+//            CriteriaQuery<User> criteria = builder.createQuery(User.class);
+//            Root<User>root = criteria.from(User.class); //Filter
+//            criteria.select(root);
+//            list = session.createQuery(criteria).getResultList();
+//Third variant
+//            list = session.createCriteria(User.class).list();
             transaction.commit();
         } catch (HibernateException e) {
+            transaction.rollback();
             e.printStackTrace();
         } finally {
             if (session != null && session.isOpen()) {
@@ -128,10 +136,11 @@ public class UserDaoHibernateImpl implements UserDao {
         Session session = null;
         try {
             session = getSessionFactory().openSession();
-            session.beginTransaction();
+            transaction = session.beginTransaction();
             session.createQuery("DELETE FROM User").executeUpdate();
-            session.getTransaction().commit();
+            transaction.commit();
         } catch (HibernateException e) {
+            transaction.rollback();
             e.printStackTrace();
         } finally {
             if (session != null && session.isOpen()) {
